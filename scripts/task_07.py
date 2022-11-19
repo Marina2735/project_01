@@ -35,3 +35,12 @@ sales = {
 #         подсчет количества товара
 #         подсчет стоимости товара
 #     вывод на консоль количества и стоимости товара на складе
+
+for name_goods in titles:
+    total_quantity = 0
+    total_price = 0
+    code_goods = titles[name_goods]
+    for quantity_price in sales[code_goods]:
+        total_quantity += quantity_price['quantity']
+        total_price += quantity_price['quantity'] * quantity_price['price']
+    print(f'{name_goods} - {total_quantity} шт. общей стоимостью {total_price} рублей.')

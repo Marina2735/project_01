@@ -19,5 +19,3 @@ for rest_months in range(11):
     
 print(f'Необходимо взять в долг {round(sum - total_salary)} рублей') 
     
-
-

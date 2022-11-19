@@ -20,6 +20,15 @@ my_favorite_songs = [
     ['In This World', 4.02],
 ]
 
+for i in my_favorite_songs:
+    result = i[1]
+
+s = [i[1]]
+print(f' Три песни звучат {round(sum(random.choices(s, k=3)))} минут')
+
+
+
+
 
 
 

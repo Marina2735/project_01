@@ -3,6 +3,7 @@
 # Распечатайте общее время звучания трех случайных песен
 # Вывод: Три песни звучат ХХХ минут.
 
+import random
 
 my_favorite_songs = {
     'Waste a Moment': 3.03,
@@ -15,3 +16,9 @@ my_favorite_songs = {
     'Nowhere to Run': 2.58,
     'In This World': 4.02,
 }
+
+for song, time in my_favorite_songs.items():
+    result = time
+
+s = [time]
+print(f' Три песни звучат {round(sum(random.choices(s, k=3)))} минут')
